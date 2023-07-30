@@ -1,0 +1,121 @@
+/* universal selector */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* class selector */
+.container {
+    background: url("background.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* id selector */
+#card {
+    border: 1px solid white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+/* tag selector */
+.header h1 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+.inputBox {
+    margin-bottom: 20px;
+    height: 45px;
+    position: relative;
+}
+
+.inputBox input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+.inputBox label {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    font-size: 25px;
+    color: white;
+    transition: 0.8s;
+}
+
+.inputBox input:focus + label {
+    top: -15px;
+}
+.inputBox input:valid + label {
+    top: -15px;
+}
+
+.inputBox ion-icon {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.rememberForgetBox {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.rememberForgetBox p {
+    color: white;
+    margin: 0px 6px 0px 2px;
+    font-size: 20px;
+}
+
+.rememberForgetBox a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#btn {
+    width: 100%;
+    padding: 5px 0px;
+    font-size: 22px;
+    border-radius: 17px;
+    border: none;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.registerBox {
+    display: flex;
+    justify-content: center;
+}
+
+.registerBox p {
+    color: white;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.registerBox a {
+    font-size: 20px;
+    text-decoration: none;
+}
